@@ -1,9 +1,8 @@
 # Dependencies
 node_modules/
-hexo_dir/node_modules/
 
 # Hexo specific
-hexo_dir/themes/butterfly/
+themes/butterfly/
 
 # Logs
 logs
@@ -34,3 +33,4 @@ yarn-error.log*
 .Trashes
 ehthumbs.db
 Thumbs.db
+
