@@ -1,5 +1,13 @@
-## Docs
+# Jude and ...'s Blog
 
-[Hexo](https://hexo.io/zh-cn/docs/commands)
+## Install
 
-[Butterfly](https://butterfly.js.org/posts/21cfbf15/)
+For installation instructions, please see [Installation Guide](docs/install.md)
+
+## Structure
+
+```bash
+├── source
+├── public
+├── node_modules
+```
