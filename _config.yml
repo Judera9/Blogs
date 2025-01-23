@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: SJail
+subtitle: 'Blogs site of Jude and Dasein'
+description: 'Notes and thoughts for Robotics and Analog IC'
 keywords:
-author: John Doe
+author: Jude and Dasein
 language: en
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://judera9.github.io/Blogs/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -21,14 +21,14 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+source_dir: source # Source 文件夹 存储内容的位置
+public_dir: public # Public 文件夹 生成静态站点的位置
+tag_dir: tags # 标签文件夹
+archive_dir: archives # 归档文件夹
+category_dir: categories # 分类文件夹
+code_dir: downloads/code # Include code 文件夹，source_dir 下的子目录
+i18n_dir: :lang # 国际化（i18n）文件夹
+skip_render: "drafts/**/*" # 跳过渲染的文件夹
 
 # Writing
 new_post_name: :title.md # File name of new posts
