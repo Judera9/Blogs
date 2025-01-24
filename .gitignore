@@ -34,3 +34,6 @@ yarn-error.log*
 ehthumbs.db
 Thumbs.db
 
+# Added
+public/**
+db.json
