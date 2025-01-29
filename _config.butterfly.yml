@@ -11,8 +11,8 @@
 
 nav:
   # Navigation bar logo image
-  logo:  # TODO: design website logo
-  display_title: true
+  logo:  /img/luanzi_logo.png # design website logo
+  display_title: false
   # Whether to fix navigation bar
   fixed: false
 
@@ -57,30 +57,30 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:  # TODO: add social links (github, bilibili, xiaohongshu, ...)
-  fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  fab fa-github: https://github.com/Judera9 || Github-Jude || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/luanzi_logo.png  # change ?
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/luanzi_avatar.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/background2.png
 
 # The banner image of index page
-index_img:
+index_img: /Blogs/img/background2.png
 
 # The banner image of archive page
-archive_img:
+archive_img: /Blogs/img/background.png
 
 # Note: tag page, not tags page
 tag_img:
