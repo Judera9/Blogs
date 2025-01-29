@@ -1,5 +1,5 @@
 # --------------------------------------
-# Hexo Butterfly Theme Configuration
+# Hexo Butterfly Theme Configuration (**Higher priority than _config.yml**)
 # If you have any questions, please refer to the documentation
 # Chinese: https://butterfly.js.org/
 # English: https://butterfly.js.org/en/
@@ -11,13 +11,24 @@
 
 nav:
   # Navigation bar logo image
-  logo:
-  display_title: true
+  logo:  /img/luanzi_logo.png # design website logo
+  display_title: false
   # Whether to fix navigation bar
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
+  Home: / || fas fa-home
+  Paper Reading || fas fa-scroll:
+    Robotics: /paper_robotics/ || fas fa-robot
+    Analog IC: /paper_ic/ || fas fa-microchip
+  Tech Blogs || fas fa-pencil:
+    Robotics: /blogs_robotics/ || fas fa-robot
+    Analog IC: /blogs_robotics/ || fas fa-microchip
+  Archives: /archives/ || fas fa-archive
+
+  # Tags: /tags/ || fas fa-tags
+  # About: /about/ || fas fa-heart
+
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -31,44 +42,45 @@ code_blocks:
   theme: light
   macStyle: false
   # Code block height limit (unit: px)
-  height_limit: false
-  word_wrap: false
+  height_limit: 200
+  word_wrap: false # 不會實現代碼自動換行
+  # highlight_shrink: false  # 在默認情況下，代碼框自動展開
 
   # Toolbar
   copy: true
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
-  shrink: false
+  shrink: false # 在默認情況下，代碼框自動展開
   fullpage: false
 
 # Social media links
 # Formal:
 #   icon: link || the description || color
-social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+social:  # TODO: add social links (github, bilibili, xiaohongshu, ...)
+  fab fa-github: https://github.com/Judera9 || Github-Jude || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/luanzi_logo.png  # change ?
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/luanzi_avatar.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/background2.png
 
 # The banner image of index page
-index_img:
+index_img: /Blogs/img/background2.png
 
 # The banner image of archive page
-archive_img:
+archive_img: /Blogs/img/background.png
 
 # Note: tag page, not tags page
 tag_img:

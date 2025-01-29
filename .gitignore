@@ -35,5 +35,10 @@ ehthumbs.db
 Thumbs.db
 
 # Added
-public/**
+public/
+public/**/*
+db.json
+
+# Added
+public/
 db.json
