@@ -36,10 +36,6 @@ Thumbs.db
 
 # Added
 public/
-public/**/*
-db.json
-
-# Added
-public/
 db.json
 themes/
+.deploy_git/
