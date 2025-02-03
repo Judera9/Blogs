@@ -1,6 +1,6 @@
 ---
 title: Hello World
-category: Robotics
+category: IC
 tags:
   - Analog IC
   - Paper Reading

@@ -11,22 +11,24 @@
 
 nav:
   # Navigation bar logo image
-  logo:  /img/luanzi_logo.png # design website logo
+  logo:  /img/background/luanzi_logo.png # design website logo
   display_title: false
   # Whether to fix navigation bar
   fixed: false
 
 menu:
   Home: / || fas fa-home
-  Paper Reading || fas fa-scroll:
-    Robotics: /paper_robotics/ || fas fa-robot
-    Analog IC: /paper_ic/ || fas fa-microchip
-  Tech Blogs || fas fa-pencil:
-    Robotics: /blogs_robotics/ || fas fa-robot
-    Analog IC: /blogs_robotics/ || fas fa-microchip
+  # Paper Reading || fas fa-scroll:
+  #   Robotics: /paper_robotics/ || fas fa-robot
+  #   Analog IC: /paper_ic/ || fas fa-microchip
+  # Tech Blogs || fas fa-pencil:
+  #   Robotics: /blogs_robotics/ || fas fa-robot
+  #   Analog IC: /blogs_ic/ || fas fa-microchip
+  Robotics: /categories/Robotics/ || fas fa-robot
+  Analog IC: /categories/IC/ || fas fa-microchip
   Archives: /archives/ || fas fa-archive
-
   # Tags: /tags/ || fas fa-tags
+  # Categories: /categories/ || fas fa-list
   # About: /about/ || fas fa-heart
 
   # List||fas fa-list:
@@ -58,40 +60,42 @@ code_blocks:
 #   icon: link || the description || color
 social:  # TODO: add social links (github, bilibili, xiaohongshu, ...)
   fab fa-github: https://github.com/Judera9 || Github-Jude || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-bilibili: https://space.bilibili.com/629192924 || Bilibili-Jude || '#4a7dbe'
+  fas fa-envelope: mailto:270964416@qq.com || Email-Jude || '#ae183a'
+  fa-solid fa-book: https://www.xiaohongshu.com/user/profile/67751462000000001801e901?xsec_token=YBCpi5xcdwoHzIEniCXD0TdLjBaE_Sato57KkgWrD-BcI=&xsec_source=app_share&xhsshare=CopyLink&appuid=67751462000000001801e901&apptime=1738555110&share_id=d68579e1f9914744838d5b5f531096bb || Xiaohongshu-Jude || '#ff2d55'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/luanzi_logo.png  # change ?
+favicon: /img/background/luanzi_logo.png  # change ?
 
 avatar:
-  img: /img/luanzi_avatar.png
+  img: /img/background/luanzi_avatar.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /img/background2.png
+default_top_img: /Blogs/img/background/background_luanzi.jpg
 
 # The banner image of index page
-index_img: /Blogs/img/background2.png
+index_img: /Blogs/img/background/background_luanzi.jpg
 
 # The banner image of archive page
-archive_img: /Blogs/img/background.png
+archive_img: /Blogs/img/background/background_luanzi.jpg
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: /Blogs/img/background/background_luanzi.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: /Blogs/img/background/background_luanzi.jpg
 
 # Note: category page, not categories page
-category_img:
+category_img: /Blogs/img/background/background_luanzi.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -103,27 +107,27 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background:
+background: "#4d796f"
 
-cover:
+cover:  # 文章缩略图
   # Disable the cover or not
   index_enable: true
   aside_enable: true
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
+    # 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 
 # Replace Broken Images
-error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+error_img:  # TODO: check and fix
+  flink: /img/background/luanzi_404.png
+  post_page: /img/background/luanzi_404.png
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
-  background: /img/error-page.png
+  background: /img/background/luanzi_404.png
 
 post_meta:
   # Home Page
@@ -143,7 +147,7 @@ post_meta:
     # Choose: date / relative
     date_format: date
     categories: true
-    tags: true
+    tags: false
     label: true
 
 # --------------------------------------
@@ -159,9 +163,9 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
-  effect: true
+  effect: false
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
@@ -184,7 +188,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 1
 
 # Display the article introduction on homepage
 # 1: description
@@ -210,14 +214,14 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
-reward:
+reward: # TODO: add reward later?
   enable: false
   text:
   QR_code:
@@ -248,7 +252,7 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: false
 
 # Displays outdated notice for a post
 noticeOutdate:
@@ -268,7 +272,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2025
   custom_text:
   # Copyright of theme and framework
   copyright: true
@@ -287,19 +291,19 @@ aside:
   position: right
   display:
     archive: true
-    tag: true
+    tag: false
     category: true
   card_author:
     enable: true
-    description:
+    description: "Welcome for exchanging ideas!"
     button:
-      enable: true
-      icon: fab fa-github
-      text: Follow Me
+      enable: false
+      icon: fa-solid fa-book
+      text: Follow me on 小红书
       link: https://github.com/xxxxxx
   card_announcement:
-    enable: true
-    content: This is my Blog
+    enable: false
+    content: E-Mail 270964416@qq.com
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -322,7 +326,7 @@ aside:
     expand: none
     sort_order:
   card_tags:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 40
     color: false
@@ -428,11 +432,11 @@ copy:
   # Add the copyright information after copied content
   copyright:
     enable: false
-    limit_count: 150
+    limit_count: 500
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
@@ -456,7 +460,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: katex
   per_page: true
   hide_scrollbar: false
 
@@ -468,7 +472,7 @@ math:
 
   katex:
     # Enable the copy KaTeX formula
-    copy_tex: false
+    copy_tex: true
 
 # --------------------------------------
 # Search
@@ -747,23 +751,23 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
-#   scrollbar_color: "#49b1f5"
-#   meta_theme_color_light: "ffffff"
-#   meta_theme_color_dark: "#0d0d0d"
+theme_color: # TODO: change color theme, currently only change "main"
+  enable: true
+  main: "#4d796f"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+  scrollbar_color: "#49b1f5"
+  meta_theme_color_light: "ffffff"
+  meta_theme_color_dark: "#0d0d0d"
 
 # The user interface setting of category and tag page
 # Choose: index - same as Homepage UI / default - same as archives UI
