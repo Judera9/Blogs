@@ -102,7 +102,14 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/Judera9/Blogs.git
-  branch: gh-pages
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  type: ''
+
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
