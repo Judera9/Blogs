@@ -1,7 +1,7 @@
 ---
 title: Demo Post # 文章標題
-# data: 2025-02-01 # 文章創建日期（不添加会采用文件创建日期）
-# updated: 2025-02-01 # 文章更新日期（可选，不添加会采用文件修改日期）
+data: 2025-01-31 # 文章創建日期
+updated: 2025-02-03 # 文章更新日期
 description: Readme for how to use Hexo and Butterfly theme # 文章描述（可选）
 categories:
   - Memo
@@ -10,18 +10,15 @@ tags:
 katex: true
 ---
 
-
-# Install
+## Install
 
 Refer to [Hexo Docs](https://hexo.io/zh-cn/docs/)
 
 Node modules and butterfly theme are not in the repository, so need to install them separately.
 
-## Ubuntu
+### Ubuntu
 
 Refer to [Butterfly Install](https://butterfly.js.org/posts/21cfbf15/)
-
-![version note](version_note.png)
 
 ```bash
 sudo apt-get install git
@@ -53,12 +50,12 @@ hexo g # hexo generate
 hexo s # hexo server
 ```
 
-## Windows
+### Windows
 
 TODO
 
 
-# Install Dependencies
+## Install Dependencies
 
 TODO
 
@@ -66,13 +63,13 @@ TODO
 
 
 
-# Generate and deploy
+## Generate and deploy
 
 
 
-# Functions
+## Functions
 
-## Math
+### Math
 
 参考[Butterfly配置教程](https://butterfly.js.org/posts/4aa8abbe/#Math-%E6%95%B8%E5%AD%B8)，使用KaTeX渲染公式，需要确认是否已经按照要求安装对应的hexo插件，参考[KaTex官网](https://katex.org/docs/options.html)可以进一步调整配置，如果当前Blog需要渲染KaTex公式，需要在 Post Front-Matter 中设置`katex: true`。
 
@@ -100,7 +97,7 @@ $A_{m,n} = \begin{pmatrix} a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\ a_{2,1} & a_{
 
 上面测试是否能够生成数学公式，如果使用`hexo s`无法显示说明安装有问题。
 
-## Search
+### Search
 
 参考[Butterfly配置教程](https://butterfly.js.org/posts/4aa8abbe/?highlight=relate#%E6%90%9C%E7%B4%A2)目前测试了local_search，能够正常使用，不确定后续是否遇到加载速度问题，已用本科学生邮箱申请了[DocSearch](https://docsearch.algolia.com/apply/)，看后续是否有回复。
 

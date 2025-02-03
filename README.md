@@ -18,3 +18,17 @@ For installation instructions, please see [Installation Guide](docs/install.md)
 
 [font awesome zw](https://fontawesome.com.cn/v5)
 [font awesome en](https://fontawesome.com/v6/icons)
+
+
+https://www.colorhexa.com/ae183a
+
+https://www.pixiv.net/en/artworks/125166270
+
+https://analytics.google.com/analytics/web/
+
+site:judera9.github.io/Blogs
+
+vscode plugins:
+- Color Highlight
+- TODO Tree
+- git graph
