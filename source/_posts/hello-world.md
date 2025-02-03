@@ -1,6 +1,7 @@
 ---
 title: Hello World
 category: Robotics
+katex: true
 tags:
   - Analog IC
   - Paper Reading
