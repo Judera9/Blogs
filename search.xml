@@ -3,22 +3,21 @@
   <entry>
     <title>Demo Post</title>
     <url>/Blogs/2025/02/03/demo-post/</url>
-    <content><![CDATA[<h1>Install</h1>
+    <content><![CDATA[<h2 id="Install">Install</h2>
 <p>Refer to <a href="https://hexo.io/zh-cn/docs/">Hexo Docs</a></p>
 <p>Node modules and butterfly theme are not in the repository, so need to install them separately.</p>
-<h2 id="Ubuntu">Ubuntu</h2>
+<h3 id="Ubuntu">Ubuntu</h3>
 <p>Refer to <a href="https://butterfly.js.org/posts/21cfbf15/">Butterfly Install</a></p>
-<p><img src="version_note.png" alt="version note"></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install git</span><br><span class="line"></span><br><span class="line"><span class="comment"># Clone the repository, first set ssh correct</span></span><br><span class="line">git <span class="built_in">clone</span> git@github.com:Judera9/Blogs.git</span><br><span class="line"><span class="comment"># git clone https://github.com/Judera9/Blogs.git # Need to set token</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Install nvm for Managing Node.js Versions</span></span><br><span class="line">wget -qO- https:/****/raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash </span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br><span class="line">nvm install 18</span><br><span class="line">nvm use 18</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install Hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install Butterfly Theme</span></span><br><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>Test for Install, you can see the result in the browser with link <a href="http://localhost:4000">http://localhost:4000</a>.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g <span class="comment"># hexo generate</span></span><br><span class="line">hexo s <span class="comment"># hexo server</span></span><br></pre></td></tr></table></figure>
-<h2 id="Windows">Windows</h2>
+<h3 id="Windows">Windows</h3>
 <p>TODO</p>
-<h1>Install Dependencies</h1>
+<h2 id="Install-Dependencies">Install Dependencies</h2>
 <p>TODO</p>
-<h1>Generate and deploy</h1>
-<h1>Functions</h1>
-<h2 id="Math">Math</h2>
+<h2 id="Generate-and-deploy">Generate and deploy</h2>
+<h2 id="Functions">Functions</h2>
+<h3 id="Math">Math</h3>
 <p>参考<a href="https://butterfly.js.org/posts/4aa8abbe/#Math-%E6%95%B8%E5%AD%B8">Butterfly配置教程</a>，使用KaTeX渲染公式，需要确认是否已经按照要求安装对应的hexo插件，参考<a href="https://katex.org/docs/options.html">KaTex官网</a>可以进一步调整配置，如果当前Blog需要渲染KaTex公式，需要在 Post Front-Matter 中设置<code>katex: true</code>。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save <span class="comment"># 如果有安裝這個的話，卸載</span></span><br><span class="line">npm un hexo-renderer-kramed --save <span class="comment"># 如果有安裝這個的話，卸載</span></span><br><span class="line"></span><br><span class="line">npm i hexo-renderer-markdown-it --save <span class="comment"># 需要安裝這個渲染插件</span></span><br><span class="line">npm install katex @renbaoshuo/markdown-it-katex <span class="comment">#需要安裝這個katex插件</span></span><br></pre></td></tr></table></figure>
 <hr>
@@ -57,7 +56,7 @@ l0,-1944c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
 -470,-1265c-4.7,-6,-9.7,-11.7,-15,-17c-0.7,-0.7,-6.7,-1,-18,-1z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.45em;"><span></span></span></span></span></span></span></span></span></span></span></p>
 <hr>
 <p>上面测试是否能够生成数学公式，如果使用<code>hexo s</code>无法显示说明安装有问题。</p>
-<h2 id="Search">Search</h2>
+<h3 id="Search">Search</h3>
 <p>参考<a href="https://butterfly.js.org/posts/4aa8abbe/?highlight=relate#%E6%90%9C%E7%B4%A2">Butterfly配置教程</a>目前测试了local_search，能够正常使用，不确定后续是否遇到加载速度问题，已用本科学生邮箱申请了<a href="https://docsearch.algolia.com/apply/">DocSearch</a>，看后续是否有回复。</p>
 ]]></content>
       <categories>
@@ -65,34 +64,6 @@ l0,-1944c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
       </categories>
       <tags>
         <tag>Memo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/Blogs/2025/01/28/hello-world/</url>
-    <content><![CDATA[<p>测试中文能够使用</p>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span>$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Robotics</category>
-      </categories>
-      <tags>
-        <tag>Analog IC</tag>
-        <tag>Paper Reading</tag>
-        <tag>Tech Blogs</tag>
       </tags>
   </entry>
   <entry>
@@ -116,6 +87,34 @@ l0,-1944c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
 ]]></content>
       <categories>
         <category>IC</category>
+      </categories>
+      <tags>
+        <tag>Analog IC</tag>
+        <tag>Paper Reading</tag>
+        <tag>Tech Blogs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/Blogs/2025/02/03/hello-world/</url>
+    <content><![CDATA[<p>测试中文能够使用</p>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span>$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Robotics</category>
       </categories>
       <tags>
         <tag>Analog IC</tag>
