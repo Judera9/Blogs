@@ -103,6 +103,6 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:Judera9/Blogs.git
+  repo: https://github.com/Judera9/Blogs.git
   branch: gh-pages
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
