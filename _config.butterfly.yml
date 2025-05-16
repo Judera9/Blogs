@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo:  /img/background/luanzi_logo.png # design website logo
+  logo:  /img/background/xiangcai.png # design website logo
   display_title: false
   # Whether to fix navigation bar
   fixed: false
@@ -68,34 +68,34 @@ social:  # TODO: add social links (github, bilibili, xiaohongshu, ...)
 # Image Settings
 # --------------------------------------
 
-favicon: /img/background/luanzi_logo.png  # change ?
+favicon: /img/background/eightliang.png  # change ?
 
 avatar:
-  img: /img/background/luanzi_avatar.png
+  img: /img/background/eightliang.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /Blogs/img/background/background_luanzi.jpg
+default_top_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # The banner image of index page
-index_img: /Blogs/img/background/background_luanzi.jpg
+index_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # The banner image of archive page
-archive_img: /Blogs/img/background/background_luanzi.jpg
+archive_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # Note: tag page, not tags page
-tag_img: /Blogs/img/background/background_luanzi.jpg
+tag_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
-tag_per_img: /Blogs/img/background/background_luanzi.jpg
+tag_per_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # Note: category page, not categories page
-category_img: /Blogs/img/background/background_luanzi.jpg
+category_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -103,11 +103,11 @@ category_img: /Blogs/img/background/background_luanzi.jpg
 category_per_img:
 
 # The background image of footer
-footer_img: /Blogs/img/background/background_luanzi.jpg
+footer_img: /Blogs/img/background/pixiv_download_bg.jpg
 
 # Website Background
 # Can set it to color or image url
-background: "#4d796f"
+background: "#1C3226"
 
 cover:  # 文章缩略图
   # Disable the cover or not
@@ -648,7 +648,7 @@ site_verification:  # TODO: need to check use google search console and "site:ju
 
 theme_color: # TODO: change color theme, currently only change "main"
   enable: true
-  main: "#4d796f"
+  main: "#1C3226"
   paginator: "##d3e2b5"
   button_hover: "##7f9a3a" 
   text_selection: "###a8c8a2"
