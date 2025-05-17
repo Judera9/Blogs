@@ -30,7 +30,7 @@ code_dir: downloads/code # Include code 文件夹，source_dir 下的子目录
 i18n_dir: :lang # 国际化（i18n）文件夹
 skip_render: 
   - "googlef63276e6c302707e.html"
-  # - "drafts/**/*"  # 跳过渲染的文件夹
+  - "drafts/**/*"  # 跳过渲染的文件夹
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -105,7 +105,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Judera9/Blogs.git
+  repo: git@github.com:Judera9/Blogs.git
   branch: gh-pages
   message: "Site updated: {{ now('MM-DD HH:mm:ss') }}"
 
