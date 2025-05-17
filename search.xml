@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Demo Post</title>
-    <url>/Blogs/2025/04/01/demo-post/</url>
+    <title>Hexo Demo Post</title>
+    <url>/Blogs/2025/04/01/Memo/hexo-demo-post/</url>
     <content><![CDATA[<h2 id="Install">Install</h2>
 <p>Refer to <a href="https://hexo.io/zh-cn/docs/">Hexo Docs</a></p>
 <p>Node modules and butterfly theme are not in the repository, so need to install them separately.</p>
 <h3 id="Ubuntu">Ubuntu</h3>
 <p>Refer to <a href="https://butterfly.js.org/posts/21cfbf15/">Butterfly Install</a></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install git</span><br><span class="line"></span><br><span class="line"><span class="comment"># Clone the repository, first set ssh correct</span></span><br><span class="line">git <span class="built_in">clone</span> git@github.com:Judera9/Blogs.git</span><br><span class="line"><span class="comment"># git clone https://github.com/Judera9/Blogs.git # Need to set token</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Install nvm for Managing Node.js Versions</span></span><br><span class="line">wget -qO- https:/****/raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash </span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br><span class="line">nvm install 18</span><br><span class="line">nvm use 18</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install Hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install Butterfly Theme</span></span><br><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>Test for Install, you can see the result in the browser with link <a href="http://localhost:4000">http://localhost:4000</a>.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g <span class="comment"># hexo generate</span></span><br><span class="line">hexo s <span class="comment"># hexo server</span></span><br></pre></td></tr></table></figure>
-<h3 id="Windows">Windows</h3>
-<p>TODO</p>
-<h2 id="Install-Dependencies">Install Dependencies</h2>
-<p>TODO</p>
-<h2 id="Generate-and-deploy">Generate and deploy</h2>
+<p>Test for Install, you can see the result in the browser with link <a href="http://localhost:4000">http://localhost:4000</a>.</p>
 <h2 id="Functions">Functions</h2>
 <h3 id="Math">Math</h3>
 <p>参考<a href="https://butterfly.js.org/posts/4aa8abbe/#Math-%E6%95%B8%E5%AD%B8">Butterfly配置教程</a>，使用KaTeX渲染公式，需要确认是否已经按照要求安装对应的hexo插件，参考<a href="https://katex.org/docs/options.html">KaTex官网</a>可以进一步调整配置，如果当前Blog需要渲染KaTex公式，需要在 Post Front-Matter 中设置<code>katex: true</code>。</p>
@@ -67,59 +62,50 @@ l0,-1944c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/Blogs/2025/04/01/hello-world%20copy/</url>
-    <content><![CDATA[<p>测试中文能够使用</p>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span>$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>IC</category>
-      </categories>
-      <tags>
-        <tag>Analog IC</tag>
-        <tag>Paper Reading</tag>
-        <tag>Tech Blogs</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/Blogs/2025/04/01/hello-world/</url>
-    <content><![CDATA[<p>测试中文能够使用</p>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span> $ hexo new <span class="string">&quot;My New Post&quot;</span>$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>Paper of high performance spot sim2real</title>
+    <url>/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/</url>
+    <content><![CDATA[<h2 id="基础信息">基础信息</h2>
+<hr>
+<p><strong>论文题目：</strong> High-Performance Reinforcement Learning on Spot:  Optimizing Simulation Parameters with Distributional Measures<br>
+<strong>作者：</strong> A.J. Miller, Fangzhou Yu, Michael Brauckmann, and Farbod Farshidian<br>
+<strong>工作单位：</strong> RAI Institute, Cambridge<br>
+<strong>发表时间：</strong> ICRA 2025<br>
+<strong>论文链接：</strong> <a href="https://rai-inst.com/resources/papers/high-performance-reinforcement-learning-on-spot/">https://rai-inst.com/resources/papers/high-performance-reinforcement-learning-on-spot/</a></p>
+<hr>
+<h2 id="研究问题">研究问题</h2>
+<ol>
+<li>本文研究的Topic是面向Reinforcement Learning的Sim-to-Real模块，硬件实验部份基于Boston dynamics的Spot机器人完成；但是本文主要还是关于Actuator参数建模，通过Domain Adaptation的方法来实现更好的Sim2Real，针对其他类型的Sim2Real Gap无法通过该方法解决。主要的研究问题包括：</li>
+</ol>
+<ul>
+<li>如何量化simulation和policy的分布的差异</li>
+<li>如何让policy适应从真机上获取的数据的分布情况</li>
+</ul>
+<ol start="2">
+<li>
+<p>什么是Sim-to-Real，之前有哪些工作在解决Sim-to-Real Gap？</p>
+</li>
+<li>
+<p>RL Sim2Real方法</p>
+</li>
+<li>
+<p>Knowledge Distillation (RMA, T-S)</p>
+</li>
+<li>
+<p>Domain Randomiazation</p>
+</li>
+<li>
+<p>Domain Adaptation (Transfer Learning, Model-based RL)</p>
+</li>
+<li>
+<p>Meta Learning</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Robotics</category>
       </categories>
       <tags>
-        <tag>Analog IC</tag>
-        <tag>Paper Reading</tag>
-        <tag>Tech Blogs</tag>
+        <tag>Robotics</tag>
       </tags>
   </entry>
 </search>

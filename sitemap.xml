@@ -2,18 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://judera9.github.io/Blogs/2025/04/01/hello-world%20copy/</loc>
+    <loc>https://judera9.github.io/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/</loc>
     
-    <lastmod>2025-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://judera9.github.io/Blogs/2025/04/01/hello-world/</loc>
-    
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2025-05-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://judera9.github.io/Blogs/2025/04/01/demo-post/</loc>
+    <loc>https://judera9.github.io/Blogs/2025/04/01/Memo/hexo-demo-post/</loc>
     
     <lastmod>2025-02-02</lastmod>
     
@@ -40,7 +31,7 @@
 
   <url>
     <loc>https://judera9.github.io/Blogs</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,28 +39,14 @@
   
   <url>
     <loc>https://judera9.github.io/Blogs/tags/Memo/</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://judera9.github.io/Blogs/tags/Analog-IC/</loc>
-    <lastmod>2025-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://judera9.github.io/Blogs/tags/Paper-Reading/</loc>
-    <lastmod>2025-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://judera9.github.io/Blogs/tags/Tech-Blogs/</loc>
-    <lastmod>2025-05-16</lastmod>
+    <loc>https://judera9.github.io/Blogs/tags/Robotics/</loc>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -78,21 +55,14 @@
   
   <url>
     <loc>https://judera9.github.io/Blogs/categories/Memo/</loc>
-    <lastmod>2025-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://judera9.github.io/Blogs/categories/IC/</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://judera9.github.io/Blogs/categories/Robotics/</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
