@@ -104,11 +104,11 @@ katex: true
   <!-- 第一行图片 -->
   <div class="image-row">
     <div class="image-container">
-      <img src="../../../../../img/Robotics/20250516/2025-05-16-03.png" alt="图片1">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-03.png" alt="pic1">
       <p class="image-caption">图片1描述</p>
     </div>
     <div class="image-container">
-      <img src="../../../../../img/Robotics/20250516/2025-05-16-04.png" alt="图片2">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-04.png" alt="pic2">
       <p class="image-caption">图片2描述</p>
     </div>
   </div>
@@ -116,7 +116,7 @@ katex: true
   <!-- 第二行图片 -->
   <div class="image-row">
     <div class="image-container">
-      <img src="../../../../../img/Robotics/20250516/2025-05-16-05.png" alt="图片3">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-05.png" alt="pic3">
       <p class="image-caption">图片3描述</p>
     </div>
   </div>

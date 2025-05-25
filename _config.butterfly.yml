@@ -940,7 +940,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="/Blogs/css/font-matter-snip.styl?ver=1.0">
+    # - <link rel="stylesheet" href="/Blogs/css/font-matter-snip.styl?ver=1.0">
+    - <link rel="stylesheet" href="/Blogs/css/font-matter-snip.css?ver=1.0">
   bottom:
     # - <script src="xxxx"></script>
 
