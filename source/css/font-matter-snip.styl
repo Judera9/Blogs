@@ -1,0 +1,41 @@
+.image-gallery
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  gap: 20px  // 行间距
+
+  .image-row
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 20px  // 图片间距
+    width: 100%
+
+  .image-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 100%
+
+    img
+      max-width: 100%
+      height: auto
+      border-radius: 8px
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: scale(1.02)
+
+  .image-caption
+    margin-top: 8px
+    color: #666
+    font-style: italic
+    text-align: center
+
+  // 响应式设计：小屏幕时每行只显示一张图片
+  @media (max-width: 768px)
+    .image-row
+      flex-direction: column
+      align-items: center

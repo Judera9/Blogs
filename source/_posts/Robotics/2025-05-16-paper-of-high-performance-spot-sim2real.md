@@ -3,15 +3,15 @@ title: "[Paper Reading] High performance RL Sim-to-Real on Spot"
 description: 这篇论文研究了面向强化学习的Sim-to-Real迁移学习模块，实验基于Boston Dynamics的Spot机器人平台。研究重点集中于执行器参数建模，采用数据驱动的领域自适应方法优化电机参数。
 date: 2025-05-16T18:21:14.655Z
 top_img: false
-cover: ./img/Robotics/2025-05-16-02.png
+cover: ./img/Robotics/20250516/2025-05-16-02.png
 draft: true
 tags:
-    - Robotics
-    - Sim-to-Real
-    - RL
+  - Robotics
+  - Sim-to-Real
+  - RL
 categories:
-    - - Robotics
-      - Paper-Reading
+  - - Robotics
+    - Paper-Reading
 katex: true
 ---
 
@@ -43,7 +43,7 @@ katex: true
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Sim2Real Methods<sup>2</sup></p>
 </div>
 <!-- FM:Snippet:End -->
@@ -52,7 +52,7 @@ katex: true
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/2025-05-16-02.png" alt="Framework" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-02.png" alt="Framework" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Framework</p>
 </div>
 <!-- FM:Snippet:End -->
@@ -95,6 +95,32 @@ katex: true
 
 
 ## 实验结果
+
+实验部分通过实现了一个flight phase gait的速度跟踪来作为衡量Sim-To-Real效果的指标，
+
+<div class="image-gallery">
+  <!-- 第一行图片 -->
+  <div class="image-row">
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-03.png" alt="图片1">
+      <p class="image-caption">图片1描述</p>
+    </div>
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-04.png" alt="图片2">
+      <p class="image-caption">图片2描述</p>
+    </div>
+  </div>
+
+  <!-- 第二行图片 -->
+  <div class="image-row">
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-05.png" alt="图片3">
+      <p class="image-caption">图片3描述</p>
+    </div>
+  </div>
+
+  <!-- 可以继续添加更多行和图片 -->
+</div>
 
 
 
