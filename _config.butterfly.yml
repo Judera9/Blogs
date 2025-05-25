@@ -20,12 +20,12 @@ menu:
   Home: / || fas fa-home
   # Paper Reading || fas fa-scroll:
   #   Robotics: /paper_robotics/ || fas fa-robot
-  #   Analog IC: /paper_ic/ || fas fa-microchip
+  #   RFIC: /paper_ic/ || fas fa-microchip
   # Tech Blogs || fas fa-pencil:
   #   Robotics: /blogs_robotics/ || fas fa-robot
-  #   Analog IC: /blogs_ic/ || fas fa-microchip
+  #   RFIC: /blogs_ic/ || fas fa-microchip
   Robotics: /categories/Robotics/ || fas fa-robot
-  Analog IC: /categories/IC/ || fas fa-microchip
+  RFIC: /categories/RFIC/ || fas fa-microchip
   Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
   # Categories: /categories/ || fas fa-list
@@ -718,8 +718,8 @@ font:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=DynaPuff&display=swap
-  font_family: DynaPuff, sans-serif
+  font_link: https://fonts.googleapis.com/css?family=Stoke&display=swap
+  font_family: Stoke, serif
 
 # The setting of divider icon
 hr_icon:

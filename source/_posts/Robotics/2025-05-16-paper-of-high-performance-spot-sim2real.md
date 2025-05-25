@@ -6,11 +6,12 @@ top_img: false
 cover: ./img/Robotics/2025-05-16-02.png
 draft: true
 tags:
-    - Robotics
-    - Sim-to-Real
-    - RL
+  - Robotics
+  - Sim-to-Real
+  - RL
 categories:
-    - [Robotics, Paper-Reading]
+  - - Robotics
+    - Paper-Reading
 katex: true
 ---
 
@@ -55,6 +56,8 @@ katex: true
   <p style="color: #666; font-style: italic; margin-top: 8px;">Framework</p>
 </div>
 <!-- FM:Snippet:End -->
+
+
 
 1. 整体实现流程：
   1. 首先训练一个基础的policy，从真机和仿真中的spot机器人上收集数据，使用Wasserstein Distance和MMD来量化分布差异
