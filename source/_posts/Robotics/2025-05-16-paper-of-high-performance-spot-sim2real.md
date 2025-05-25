@@ -10,8 +10,7 @@ tags:
     - Sim-to-Real
     - RL
 categories:
-    - - Robotics
-      - Paper-Reading
+    - [Robotics, Paper-Reading]
 katex: true
 ---
 
