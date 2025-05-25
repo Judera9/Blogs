@@ -179,6 +179,7 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - Try to learn something about everything and everything about something.
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -196,7 +197,7 @@ index_layout: 1
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
   length: 500
 

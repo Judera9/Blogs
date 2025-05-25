@@ -57,6 +57,16 @@
           "title": "updated",
           "name": "updated",
           "type": "datetime"
+        },
+        {
+          "title": "top_img",
+          "name": "top_img",
+          "type": "boolean"
+        },
+        {
+          "title": "cover",
+          "name": "cover",
+          "type": "string"
         }
       ]
     }
@@ -77,5 +87,17 @@
       "path": "[[workspace]]/source/drafts"
     }
   ],
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.content.snippets": {
+    "img": {
+      "description": "img html",
+      "body": [
+        "<div style=\"text-align: center;\">",
+        "  <img src=\"../../../../../img/img_path\" alt=\"descri\" style=\"max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\">",
+        "  <p style=\"color: #666; font-style: italic; margin-top: 8px;\">descri</p>",
+        "</div>"
+      ],
+      "fields": []
+    }
+  }
 }
