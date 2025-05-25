@@ -57,6 +57,8 @@ katex: true
 </div>
 <!-- FM:Snippet:End -->
 
+
+
 1. 整体实现流程：
   1. 首先训练一个基础的policy，从真机和仿真中的spot机器人上收集数据，使用Wasserstein Distance和MMD来量化分布差异
   2. 利用两个metrics来设计scoring function，通过CMA-ES算法训练提升RL中使用的机器人模型的准确性
