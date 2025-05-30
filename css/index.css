@@ -1505,7 +1505,7 @@ a:hover {
 .site-name,
 #aside-content .author-info-name,
 #aside-content .author-info-description {
-  font-family: DynaPuff, sans-serif;
+  font-family: Stoke, serif;
 }
 .text-center {
   text-align: center;
@@ -1985,7 +1985,7 @@ figure.highlight pre .javascript .function {
   height: 100%;
   vertical-align: top;
   text-align: center;
-  font-family: DynaPuff, sans-serif;
+  font-family: Stoke, serif;
 }
 @media screen and (max-width: 768px) {
   .type-404 .error-content .error-info {

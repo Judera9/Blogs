@@ -5,22 +5,22 @@
 <meta property="og:site_name" content="A StrawBerry in Blue">
 <meta property="og:description" content="这篇论文研究了面向强化学习的Sim-to-Real迁移学习模块，实验基于Boston Dynamics的Spot机器人平台。研究重点集中于执行器参数建模，采用数据驱动的领域自适应方法优化电机参数。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://judera9.github.io/Blogs/img/Robotics/2025-05-16-02.png">
+<meta property="og:image" content="https://judera9.github.io/Blogs/img/Robotics/20250516/2025-05-16-02.png">
 <meta property="article:published_time" content="2025-05-16T10:21:14.655Z">
-<meta property="article:modified_time" content="2025-05-17T13:55:05.995Z">
+<meta property="article:modified_time" content="2025-05-25T11:53:10.512Z">
 <meta property="article:author" content="Jude &amp; Dasein">
 <meta property="article:tag" content="Robotics">
 <meta property="article:tag" content="Sim-to-Real">
 <meta property="article:tag" content="RL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://judera9.github.io/Blogs/img/Robotics/2025-05-16-02.png"><script type="application/ld+json">{
+<meta name="twitter:image" content="https://judera9.github.io/Blogs/img/Robotics/20250516/2025-05-16-02.png"><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "[Paper Reading] High performance RL Sim-to-Real on Spot",
   "url": "https://judera9.github.io/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/",
-  "image": "https://judera9.github.io/Blogs/img/Robotics/2025-05-16-02.png",
+  "image": "https://judera9.github.io/Blogs/img/Robotics/20250516/2025-05-16-02.png",
   "datePublished": "2025-05-16T10:21:14.655Z",
-  "dateModified": "2025-05-17T13:55:05.995Z",
+  "dateModified": "2025-05-25T11:53:10.512Z",
   "author": [
     {
       "@type": "Person",
@@ -125,7 +125,7 @@ gtag('config', 'G-ZN1EZ11P0W')
 btf.addGlobalFn('pjaxComplete', () => {
   gtag('config', 'G-ZN1EZ11P0W', {'page_path': window.location.pathname})
 }, 'google_analytics')
-</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Stoke&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   root: '/Blogs/',
   algolia: undefined,
   localSearch: {"path":"/Blogs/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
@@ -168,7 +168,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #1C3226;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/Blogs/img/background/eightliang.png" onerror="this.onerror=null;this.src='/Blogs/img/background/luanzi_404.png'" alt="avatar"/></div><div class="site-data text-center"><a href="/Blogs/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/Blogs/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/Blogs/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Blogs/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/Robotics/"><i class="fa-fw fas fa-robot"></i><span> Robotics</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/IC/"><i class="fa-fw fas fa-microchip"></i><span> Analog IC</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/Blogs/"><img class="site-icon" src="/Blogs/img/background/xiangcai.png" alt="Logo"></a><a class="nav-page-title" href="/Blogs/"><span class="site-name">[Paper Reading] High performance RL Sim-to-Real on Spot</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Blogs/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/Robotics/"><i class="fa-fw fas fa-robot"></i><span> Robotics</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/IC/"><i class="fa-fw fas fa-microchip"></i><span> Analog IC</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">[Paper Reading] High performance RL Sim-to-Real on Spot</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-05-16T10:21:14.655Z" title="Created 2025-05-16 18:21:14">2025-05-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-05-17T13:55:05.995Z" title="Updated 2025-05-17 21:55:05">2025-05-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/Blogs/categories/Robotics/">Robotics</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/Blogs/categories/Robotics/Paper-Reading/">Paper-Reading</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">528</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>1mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><h2 id="基础信息">基础信息</h2>
+}</script><link rel="stylesheet" href="/Blogs/css/font-matter-snip.css?ver=1.0"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #1C3226;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/Blogs/img/background/eightliang.png" onerror="this.onerror=null;this.src='/Blogs/img/background/luanzi_404.png'" alt="avatar"/></div><div class="site-data text-center"><a href="/Blogs/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/Blogs/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/Blogs/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Blogs/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/Robotics/"><i class="fa-fw fas fa-robot"></i><span> Robotics</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/RFIC/"><i class="fa-fw fas fa-microchip"></i><span> RFIC</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/Blogs/"><img class="site-icon" src="/Blogs/img/background/xiangcai.png" alt="Logo"></a><a class="nav-page-title" href="/Blogs/"><span class="site-name">[Paper Reading] High performance RL Sim-to-Real on Spot</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Blogs/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/Robotics/"><i class="fa-fw fas fa-robot"></i><span> Robotics</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/categories/RFIC/"><i class="fa-fw fas fa-microchip"></i><span> RFIC</span></a></div><div class="menus_item"><a class="site-page" href="/Blogs/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">[Paper Reading] High performance RL Sim-to-Real on Spot</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-05-16T10:21:14.655Z" title="Created 2025-05-16 18:21:14">2025-05-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-05-25T11:53:10.512Z" title="Updated 2025-05-25 19:53:10">2025-05-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/Blogs/categories/Robotics/">Robotics</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/Blogs/categories/Robotics/Paper-Reading/">Paper-Reading</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>5mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><h2 id="基础信息">基础信息</h2>
 <hr>
 <p><strong>论文题目：</strong> High-Performance Reinforcement Learning on Spot: Optimizing Simulation Parameters with Distributional Measures<br>
 <strong>作者：</strong> A.J. Miller, Fangzhou Yu, Michael Brauckmann, and Farbod Farshidian<br>
@@ -199,13 +199,88 @@ btf.addGlobalFn('pjaxComplete', () => {
 </ul>
 </li>
 </ol>
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <p style="color: #666; font-style: italic; margin-top: 8px;">Sim2Real Methods</p>
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Sim2Real Methods<sup>2</sup></p>
 </div>
+<!-- FM:Snippet:End -->
+<h2 id="技术方法">技术方法</h2>
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
+<div style="text-align: center;">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-02.png" alt="Framework" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Framework</p>
+</div>
+<!-- FM:Snippet:End -->
+<ol>
+<li>整体实现流程：</li>
+<li>首先训练一个基础的policy，从真机和仿真中的spot机器人上收集数据，使用Wasserstein Distance和MMD来量化分布差异</li>
+<li>利用两个metrics来设计scoring function，通过CMA-ES算法训练提升RL中使用的机器人模型的准确性</li>
+<li>使用新的optimized spot model来重新训练policy</li>
+<li>机器人模型（actuator model）：</li>
+<li>有力反馈，所以不需要考虑gear ratios等问题</li>
+<li>在下层API调用时的Communication delay<br>
+[Image]</li>
+<li>Actuator建模<br>
+- 膝关节有一个remotized lead-screw joint（远程丝杠关节），丝杠结构通过机械传动放大扭矩，但是会有更高的摩擦阻力，在仿真中需要精确的对丝杠摩擦力建模<br>
+- 关节扭矩限制依赖关节位置和速度，通过二维曲线建模<br>
+[Image]</li>
+<li>Observation noise观测噪声建模<br>
+- 使用data driven methods构建一个gaussain noise model，在训练的时候加在obs上<br>
+- gaussian的mean和std是通过收集真机数据，然后FFT转换到频域，然后通过乘上频率，将不同频率的噪声进行归一化，这样能够统一对于所有频段的噪声进行建模，随后通过选择$$[\frac{f_s}{4},\frac{f_s}{2}]$$的中高频段噪声进行建模，计算出所建模噪声的std</li>
+<li>仿真模型参数的scoring</li>
+<li>现有方法：<br>
+1. 手动建模参数（system ID）：复杂度太高，不同系统的差异较大，无法迁移<br>
+2. Actuator Network：认为black box不可靠，会混淆真实的情况；除此之外很多机器没有力反馈，无法闭环</li>
+<li>论文采用的方案：<br>
+1. 用一个gray box来参数化建模（主要针对joint friction和torque-speed limis一共8个超参数）<br>
+[Image]<br>
+1. socring：如何评估参数的“好坏”是一个难题，论文使用了generative learning的一些statistical measures，将仿真中的agent看作generator，然后真机数据是real data，通过计算WD和MMD来捕捉分布的差异，其中WD擅长捕捉分布的全局形状结构差异（对重叠程度和偏移敏感），MMD捕捉高维空间中的局部细节差异<br>
+2. optimization：使用CMA-ES无梯度算法（因为他们以前在其他协同设计的工作中用过）</li>
+<li>方案使用的算法详情：<br>
+1. Wasserstein Distance：可以用作一种distribution之间的距离的度量，但本质是计算distribution的Transpotation运输成本 $$T:p(y)=T(p(x))$$，WD距离难以计算，只有dim=1或高斯分布能够显式计算<br>
+[Image]<br>
+2. Maximum Mean Discrepancy：将原始数据映射到高维特征空间（如通过核函数），在新空间中比较两组数据的均值差异<br>
+[Image]<br>
+3. CMA-ES：假设目标分布是高斯分布<br>
+[Image]<br>
+[Image]<br>
+[Image]<br>
+[Image]<br>
+[Image]</li>
+</ol>
 <h2 id="实验结果">实验结果</h2>
+<p>实验部分通过实现了一个flight phase gait的速度跟踪来作为衡量Sim-To-Real效果的指标，</p>
+<div class="image-gallery">
+  <!-- 第一行图片 -->
+  <div class="image-row">
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-03.png" alt="pic1">
+      <p class="image-caption">图片1描述</p>
+    </div>
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-04.png" alt="pic2">
+      <p class="image-caption">图片2描述</p>
+    </div>
+  </div>
+  <!-- 第二行图片 -->
+  <div class="image-row">
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-05.png" alt="pic3">
+      <p class="image-caption">图片3描述</p>
+    </div>
+  </div>
+  <!-- 可以继续添加更多行和图片 -->
+</div>
 <h2 id="论文总结">论文总结</h2>
-</article><div class="tag_share"></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/Blogs/img/background/eightliang.png" onerror="this.onerror=null;this.src='/Blogs/img/background/luanzi_404.png'" alt="avatar"/></div><div class="author-info-name">Jude &amp; Dasein</div><div class="author-info-description">Welcome for exchanging ideas!</div><div class="site-data"><a href="/Blogs/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/Blogs/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/Blogs/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Judera9" target="_blank" title="Github-Jude"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/629192924" target="_blank" title="Bilibili-Jude"><i class="fab fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="mailto:270964416@qq.com" target="_blank" title="Email-Jude"><i class="fas fa-envelope" style="color: #ae183a;"></i></a><a class="social-icon" href="https://www.xiaohongshu.com/user/profile/67751462000000001801e901?xsec_token=YBCpi5xcdwoHzIEniCXD0TdLjBaE_Sato57KkgWrD-BcI=&amp;xsec_source=app_share&amp;xhsshare=CopyLink&amp;appuid=67751462000000001801e901&amp;apptime=1738555110&amp;share_id=d68579e1f9914744838d5b5f531096bb" target="_blank" title="Xiaohongshu-Jude"><i class="fa-solid fa-book" style="color: #ff2d55;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E4%BF%A1%E6%81%AF"><span class="toc-number">1.</span> <span class="toc-text">基础信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">研究问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-number">3.</span> <span class="toc-text">实验结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">论文总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/" title="[Paper Reading] High performance RL Sim-to-Real on Spot"><img src="/Blogs/./img/Robotics/2025-05-16-02.png" onerror="this.onerror=null;this.src='/Blogs/img/background/luanzi_404.png'" alt="[Paper Reading] High performance RL Sim-to-Real on Spot"/></a><div class="content"><a class="title" href="/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/" title="[Paper Reading] High performance RL Sim-to-Real on Spot">[Paper Reading] High performance RL Sim-to-Real on Spot</a><time datetime="2025-05-16T10:21:14.655Z" title="Created 2025-05-16 18:21:14">2025-05-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/Blogs/img/background/pixiv_download_bg.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2025 By Jude & Dasein</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/Blogs/js/utils.js"></script><script src="/Blogs/js/main.js"></script><div class="js-pjax"><script>(async () => {
+<ol>
+<li>另外一个问题是，这种方法无法像论文中所述end-to-end的实现RL Sim-to-Real，因为这种方法所用到的数据量太少了，并且数据来源于一个预训练的policy，当policy发生偏移后，所训练得到的参数是否还是最优的，这一点值得商榷</li>
+<li>从这个角度看，潜在更好的方式可能还是Meta Learning或Model-based RL这一类方法，使用通用模型或通用算法来适应不同的环境，而不是通过单独一个policy的结果来优化仿真参数</li>
+</ol>
+<h2 id="引用参考">引用参考</h2>
+<p>[1] A.J. Miller, Fangzhou Yu, Michael Brauckmann, and Farbod Farshidian. High-Performance Reinforcement Learning on Spot: Optimizing Simulation Parameters with Distributional Measures. In ICRA, 2025.</p>
+<p>[2] <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2009.13303/1000">https://arxiv.org/pdf/2009.13303/1000</a></p>
+<!-- http://localhost:4000/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real --></article><div class="tag_share"></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/Blogs/img/background/eightliang.png" onerror="this.onerror=null;this.src='/Blogs/img/background/luanzi_404.png'" alt="avatar"/></div><div class="author-info-name">Jude &amp; Dasein</div><div class="author-info-description">Welcome for exchanging ideas!</div><div class="site-data"><a href="/Blogs/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/Blogs/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/Blogs/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Judera9" target="_blank" title="Github-Jude"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/629192924" target="_blank" title="Bilibili-Jude"><i class="fab fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="mailto:270964416@qq.com" target="_blank" title="Email-Jude"><i class="fas fa-envelope" style="color: #ae183a;"></i></a><a class="social-icon" href="https://www.xiaohongshu.com/user/profile/67751462000000001801e901?xsec_token=YBCpi5xcdwoHzIEniCXD0TdLjBaE_Sato57KkgWrD-BcI=&amp;xsec_source=app_share&amp;xhsshare=CopyLink&amp;appuid=67751462000000001801e901&amp;apptime=1738555110&amp;share_id=d68579e1f9914744838d5b5f531096bb" target="_blank" title="Xiaohongshu-Jude"><i class="fa-solid fa-book" style="color: #ff2d55;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E4%BF%A1%E6%81%AF"><span class="toc-number">1.</span> <span class="toc-text">基础信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">研究问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">技术方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-number">4.</span> <span class="toc-text">实验结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93"><span class="toc-number">5.</span> <span class="toc-text">论文总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%E5%8F%82%E8%80%83"><span class="toc-number">6.</span> <span class="toc-text">引用参考</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/" title="[Paper Reading] High performance RL Sim-to-Real on Spot"><img src="/Blogs/./img/Robotics/20250516/2025-05-16-02.png" onerror="this.onerror=null;this.src='/Blogs/img/background/luanzi_404.png'" alt="[Paper Reading] High performance RL Sim-to-Real on Spot"/></a><div class="content"><a class="title" href="/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/" title="[Paper Reading] High performance RL Sim-to-Real on Spot">[Paper Reading] High performance RL Sim-to-Real on Spot</a><time datetime="2025-05-16T10:21:14.655Z" title="Created 2025-05-16 18:21:14">2025-05-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/Blogs/img/background/pixiv_download_bg.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2025 By Jude & Dasein</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/Blogs/js/utils.js"></script><script src="/Blogs/js/main.js"></script><div class="js-pjax"><script>(async () => {
   const showKatex = () => {
     document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
   }
