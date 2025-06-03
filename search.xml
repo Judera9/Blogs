@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>[Paper Reading] High performance RL Sim-to-Real on Spot</title>
+    <url>/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real/</url>
+    <content><![CDATA[<h2 id="基础信息">基础信息</h2>
+<hr>
+<p><strong>论文题目：</strong> High-Performance Reinforcement Learning on Spot: Optimizing Simulation Parameters with Distributional Measures<br>
+<strong>作者：</strong> A.J. Miller, Fangzhou Yu, Michael Brauckmann, and Farbod Farshidian<br>
+<strong>工作单位：</strong> RAI Institute, Cambridge<br>
+<strong>发表时间：</strong> ICRA 2025<br>
+<strong>论文链接：</strong> <a href="https://rai-inst.com/resources/papers/high-performance-reinforcement-learning-on-spot/">https://rai-inst.com/resources/papers/high-performance-reinforcement-learning-on-spot/</a></p>
+<hr>
+<h2 id="研究问题">研究问题</h2>
+<ol>
+<li>这篇论文研究了面向强化学习的Sim-to-Real迁移学习模块，实验基于Boston Dynamics的Spot机器人平台。研究重点集中于<strong>执行器参数建模</strong>，采用数据驱动的领域自适应方法优化电机参数。需要指出的是，本文方法主要解决由执行器特性引起的仿真-现实差异，而对于环境因素或刚体模型不准确等其他因素导致的Sim-to-Real Gap则未涉及。这篇工作主要探讨以下两个核心问题：
+<ul>
+<li>如何量化仿真环境与真实环境中的策略分布差异（scoring metrics）</li>
+<li>如何使策略适应从真实机器人获取的数据分布（algorithm）</li>
+</ul>
+</li>
+<li>机器人Sim-to-Real问题及其研究进展：
+<ul>
+<li>Sim-to-Real问题是随着基于学习的控制方法在机器人领域兴起而产生的重要研究课题。在IsaacSim或MuJoCo等仿真环境中，策略训练完全依赖于仿真器的刚体动力学模型。然而，这些仿真器通常会对物理计算进行必要的简化处理。此外，真实机器人的质量、惯量、摩擦系数等参数与仿真环境难以完全匹配，这些因素共同导致了Sim-to-Real Gap。</li>
+<li>数学上，<strong>Sim-to-Real Gap可以看作是策略在仿真与真实环境下的动力学表现不同，即我们在强化学习中所说的State Transition <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>θ</mi></msub><mo stretchy="false">(</mo><msub><mi>s</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mi mathvariant="normal">∣</mi><msub><mi>s</mi><mi>t</mi></msub><mo separator="true">,</mo><msub><mi>a</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p_{\theta}(s_{t+1} | s_t, a_t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>的差异</strong>。目前解决Sim-to-Real Gap的方法主要有以下几种：
+<ul>
+<li>知识蒸馏 （RMA, Teacher-Student）</li>
+<li>域随机化（Domain Randomiazation）</li>
+<li>域自适应（Domain Adaptation）</li>
+<li>基于模型的强化学习（Model-based RL）</li>
+<li>元学习（Meta Learning）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
+<div style="text-align: center;">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Sim2Real Methods<sup>1</sup></p>
+</div>
+<!-- FM:Snippet:End -->
+<h2 id="技术方法">技术方法</h2>
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
+<div style="text-align: center;">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-02.png" alt="Pipeline" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Spot Train and Deployment Pipeline</p>
+</div>
+<!-- FM:Snippet:End -->
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
+<div style="text-align: center;">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-06.png" alt="Framework" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Framework of this paper</p>
+</div>
+<!-- FM:Snippet:End -->
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
+<div style="text-align: center;">
+  <img src="../../../../../img/Robotics/20250516/2025-05-16-07.png" alt="Method" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Method of this paper</p>
+</div>
+<!-- FM:Snippet:End -->
+<ul>
+<li><strong>整个工作包含如下几个部分，整合为一个完整的Sim-to-Real框架</strong><br>
+(1) 首先使用默认参数训练一个基础policy，从真机和仿真中的spot机器人上收集数据，包括策略的观测数据，以及Spot提供的其他接口数据（虽然有力反馈，但没使用）<br>
+(2) 首先对Sim-To-Real问题进行建模，定义了三个Gap的具体形式，分别是通信延迟，策略观测噪声和执行器参数，然后通过真机获取的相关数据前两种Gap直接建模得到相关超参数，然后电机模型相关参数则用优化方法进行确认；<br>
+(3) 然后使用关节的位置和速度作为特征，使用Wasserstein Distance和MMD来设计scoring function，在仿真中固定策略模型，通过CMA-ES算法优化电机模型参数<br>
+(4) 使用优化后的电机模型参数重新训练policy，并在真机上进行验证</li>
+</ul>
+<h2 id="实验结果">实验结果</h2>
+<ul>
+<li>实验部分通过实现了一个flight phase gait的速度跟踪来作为衡量Sim-To-Real效果的指标，下面是plot出来的结果，可以看到使用优化后的参数，策略的动作会没有之前保守，并且Simulation和Hardware之间的差距减小了，还是有明显效果的。</li>
+</ul>
+<div class="image-gallery">
+  <!-- 第一行图片 -->
+  <div class="image-row">
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-03.png" alt="pic1">
+      <p class="image-caption">Policy Action Comparison</p>
+    </div>
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-04.png" alt="pic2">
+      <p class="image-caption">Policy Troque Comparison</p>
+    </div>
+  </div>
+  <!-- 第二行图片 -->
+  <div class="image-row">
+    <div class="image-container">
+      <img src="../../../../../img/Robotics/20250516/2025-05-16-05.png" alt="pic3">
+      <p class="image-caption">Base Forward Linear Velocity Comparison</p>
+    </div>
+  </div>
+  <!-- 可以继续添加更多行和图片 -->
+</div>
+<h2 id="论文总结">论文总结</h2>
+<ol>
+<li>首先，这个工作研究的问题是非常有价值的，RL作为一个强大的工具，但是极度依赖于仿真的结果，因此有偏的模型会严重影响RL在真机上的效果</li>
+<li>个人感觉论文提出的方法还是非常靠谱的，只不过稍微有点复杂了，并且似乎也无法保证每台机器用一组参数就能够保证Sim-to-Real Gap的减小，可能对同一机器人的每台机器还需要重新训练优化参数</li>
+<li>可能更好的方法还是Meta Learning或Model-based RL这一类方法，使用通用模型或通用算法来适应不同的环境，而不是通过单独一个policy的结果来优化仿真参数</li>
+</ol>
+<h2 id="引用参考">引用参考</h2>
+<p>[1] <a href="https://arxiv.org/pdf/2009.13303/1000">https://arxiv.org/pdf/2009.13303/1000</a></p>
+<!-- http://localhost:4000/Blogs/2025/05/16/Robotics/2025-05-16-paper-of-high-performance-spot-sim2real -->]]></content>
+      <categories>
+        <category>Robotics</category>
+        <category>Paper-Reading</category>
+      </categories>
+      <tags>
+        <tag>Robotics</tag>
+        <tag>Sim-to-Real</tag>
+        <tag>RL</tag>
+      </tags>
+  </entry>
+</search>
