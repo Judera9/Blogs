@@ -116,8 +116,43 @@
     <content><![CDATA[<h2 id="Introduction">Introduction</h2>
 <hr>
 <p><strong>Repository Link:</strong> <a href="https://github.com/Judera9/RerunVis">https://github.com/Judera9/RerunVis</a><br>
-<strong>Repository Introduction:</strong> Recently I have been working on robot imitation learning, this script is worked on top of Unitree Lafan repository. I add several features to make it easy to use for visualizing robot motion data for newly added robot assets.</p>
+<strong>Repository Introduction:</strong> Recently I have been working on <em><strong>robot imitation learning</strong></em>, this script is written on top of Unitree Lafan repository. I add several features to make it easy to use for visualizing robot motion data for newly added robot assets. I use <em><strong>pinnoccchio</strong></em> to load the robot model and calculate the forward kinematics, and use <em><strong>rerun</strong></em> to visualize the robot motion data. The extended dataset can be saved as a <code>.npy</code> file, and be used in RL training. I also add a demo for unitree g1 robot, you can follow the <a href="http://README.md">README.md</a> to run it.</p>
+<!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
+<div style="text-align: center;">
+  <img src="../../../../../img/Robotics/20250603/2025-06-03-01.jpg" alt="demo for unitree g1 robot" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="color: #666; font-style: italic; margin-top: 8px;">Demo for Unitree G1 Robot</p>
+</div>
+<!-- FM:Snippet:End -->
 <hr>
+<h2 id="Install">Install</h2>
+<p>After cloning the repo:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n rerun_test python=3.10</span><br><span class="line">conda activate rerun_test</span><br><span class="line">pip install -e .</span><br><span class="line">conda install pinocchio -c conda-forge</span><br></pre></td></tr></table></figure>
+<p>Test install:</p>
+<ul>
+<li>should show a window with a g1 jumping</li>
+<li>can save a converted motion npy file</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python scripts/rerun_visualize.py</span><br></pre></td></tr></table></figure>
+<h2 id="Usage">Usage</h2>
+<p>[<strong>IMPORTANT</strong>] Because current used DEMO g1 data have 29 dof, the DEMO g1 urdf has 23 dof. So you should remove the following codes in <code>utils/data_utils.py</code> for your robot:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">joint_pos = np.delete(</span><br><span class="line">    joint_pos, (<span class="number">13</span>, <span class="number">14</span>, <span class="number">20</span>, <span class="number">21</span>, <span class="number">27</span>, <span class="number">28</span>), axis=<span class="number">1</span></span><br><span class="line">)  <span class="comment"># WARNING</span></span><br></pre></td></tr></table></figure>
+<hr>
+<ol>
+<li>Add your robot urdf and meshes in <code>assets/</code></li>
+<li>Add your own robot config in <code>config/</code></li>
+<li>Change the loaded robot config in <code>scripts/rerun_visualize.py</code></li>
+</ol>
+<h2 id="Data-Format">Data Format</h2>
+<ul>
+<li>Original data format support <code>.csv</code> and <code>.npy</code> files.</li>
+<li>Both files is the same format described as following, this can be aware from the function <code>load_motions_for_rerun</code> in <code>utils/data_utils.py</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line">m_&#123;t-1&#125; -&gt; ROOT_POS(3), ROOT_ORI(4), JOINT_POS(NUM_JOINTS)</span><br><span class="line">m_t -&gt; ROOT_POS(3), ROOT_ORI(4), JOINT_POS(NUM_JOINTS)</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<ul>
+<li>The converted data format is <code>.npy</code> file.</li>
+<li>The converted data include both joint space states and keypoints states, which are calculated using Pinocchio. You can try using different frame (<em>LOCAL, WORLD, LOCAL_WORLD_ALIGNED</em>) to calculate the keypoints states.</li>
+<li>details can also be found in the function <code>load_motions_for_rerun</code> in <code>utils/data_utils.py</code></li>
+</ul>
 ]]></content>
       <categories>
         <category>Robotics</category>
