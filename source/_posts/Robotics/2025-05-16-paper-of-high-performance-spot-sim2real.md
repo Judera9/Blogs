@@ -4,7 +4,6 @@ description: 这篇论文研究了面向强化学习的Sim-to-Real迁移学习�
 date: 2025-05-16T18:21:14.655Z
 top_img: false
 cover: ./img/Robotics/20250516/2025-05-16-02.png
-draft: true
 tags:
   - Robotics
   - Sim-to-Real
