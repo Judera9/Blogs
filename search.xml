@@ -110,4 +110,22 @@
         <tag>RL</tag>
       </tags>
   </entry>
+  <entry>
+    <title>[Repo] Use ReRun for visualizing robot motion data</title>
+    <url>/Blogs/2025/06/03/Robotics/2025-06-03-repo-a-simple-rerun-script-for-visualizing-robot-motion-data/</url>
+    <content><![CDATA[<h2 id="Introduction">Introduction</h2>
+<hr>
+<p><strong>Repository Link:</strong> <a href="https://github.com/Judera9/RerunVis">https://github.com/Judera9/RerunVis</a><br>
+<strong>Repository Introduction:</strong> Recently I have been working on robot imitation learning, this script is worked on top of Unitree Lafan repository. I add several features to make it easy to use for visualizing robot motion data for newly added robot assets.</p>
+<hr>
+]]></content>
+      <categories>
+        <category>Robotics</category>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Robotics</tag>
+        <tag>Imitation Learning</tag>
+      </tags>
+  </entry>
 </search>
