@@ -713,8 +713,8 @@ beautify:
 font:
   global_font_size:
   code_font_size:
-  font_family:
-  code_font_family:
+  font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "STSong", "Microsoft YaHei", sans-serif
+  code_font_family: consolas, Menlo, "Microsoft YaHei", "Microsoft JhengHei", sans-serif
 
 # Font settings for the site title and site subtitle
 blog_title_font:
@@ -800,7 +800,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
