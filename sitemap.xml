@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://judera9.github.io/Blogs/2025/06/04/Robotics/2025-06-04-exp-ventory-and-troubleshooting-for-install-ubuntu-2204/</loc>
+    
+    <lastmod>2025-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://judera9.github.io/Blogs/2025/06/03/Robotics/2025-06-03-repo-a-simple-rerun-script-for-visualizing-robot-motion-data/</loc>
     
     <lastmod>2025-06-03</lastmod>
@@ -31,7 +40,7 @@
 
   <url>
     <loc>https://judera9.github.io/Blogs</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,28 +48,42 @@
   
   <url>
     <loc>https://judera9.github.io/Blogs/tags/Robotics/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://judera9.github.io/Blogs/tags/Sim-to-Real/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://judera9.github.io/Blogs/tags/RL/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://judera9.github.io/Blogs/tags/Imitation-Learning/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://judera9.github.io/Blogs/tags/Tools/</loc>
+    <lastmod>2025-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://judera9.github.io/Blogs/tags/Troubleshooting/</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -69,21 +92,21 @@
   
   <url>
     <loc>https://judera9.github.io/Blogs/categories/Robotics/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://judera9.github.io/Blogs/categories/Robotics/Paper-Reading/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://judera9.github.io/Blogs/categories/Robotics/Tools/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

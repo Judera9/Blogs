@@ -163,4 +163,33 @@
         <tag>Imitation Learning</tag>
       </tags>
   </entry>
+  <entry>
+    <title>[Exp] Ventory and troubleshooting for install ubuntu 22.04</title>
+    <url>/Blogs/2025/06/04/Robotics/2025-06-04-exp-ventory-and-troubleshooting-for-install-ubuntu-2204/</url>
+    <content><![CDATA[<h2 id="Introduction-to-Ventoy">Introduction to Ventoy</h2>
+<p>When working in robotics, it’s common to frequently reinstall operating systems like Ubuntu for testing, development, or deployment on new hardware. This process can be time-consuming, especially when managing multiple .iso files for different versions or distributions.</p>
+<p><strong>Ventoy</strong> is a powerful open-source tool that simplifies this workflow. Instead of repeatedly formatting your USB drive or using different tools for each installation, Ventoy allows you to copy multiple .iso files directly onto a single USB drive. Upon booting, Ventoy presents a simple menu for you to select which OS to install.</p>
+<h3 id="Key-Features">Key Features</h3>
+<ul>
+<li><strong>Multi-ISO Support:</strong> Store and boot multiple .iso files from one USB drive.</li>
+<li><strong>No Reformatting Needed:</strong> Just copy or delete .iso files as needed.</li>
+<li><strong>Fast and Simple:</strong> No need to extract or burn images—just drag and drop.</li>
+<li><strong>Wide Compatibility:</strong> Supports most Linux distributions, including all recent Ubuntu releases.</li>
+</ul>
+<p>For robotics engineers, Ventoy is an invaluable utility for streamlining the OS installation process, saving both time and effort during frequent system setups.</p>
+<blockquote>
+<p>Learn more and download Ventoy at: <a href="https://www.ventoy.net/">https://www.ventoy.net/</a></p>
+</blockquote>
+<h2 id="Troubleshooting-for-Install-Ubuntu-22-04">Troubleshooting for Install Ubuntu 22.04</h2>
+<p>When I install Ubuntu 22.04, I met a problem that when I select “try or install ubuntu” from the ubuntu installing menu, it will show a black screen and nothing happens for a long time. <strong>The solution is to press “e” to enter the edit mode, and then add “nomodeset” to replace the “—” after “quiet splash”. Then press “F10” to start the installation.</strong> This fix my problem!</p>
+]]></content>
+      <categories>
+        <category>Robotics</category>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+        <tag>Troubleshooting</tag>
+      </tags>
+  </entry>
 </search>
