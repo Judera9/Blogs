@@ -42,7 +42,7 @@ katex: true
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/20250516/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/Blogs/img/Robotics/20250516/2025-05-16-01.png" alt="Sim2Real Methods" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Sim2Real Methods<sup>1</sup></p>
 </div>
 <!-- FM:Snippet:End -->
@@ -51,21 +51,21 @@ katex: true
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/20250516/2025-05-16-02.png" alt="Pipeline" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/Blogs/img/Robotics/20250516/2025-05-16-02.png" alt="Pipeline" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Spot Train and Deployment Pipeline</p>
 </div>
 <!-- FM:Snippet:End -->
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/20250516/2025-05-16-06.png" alt="Framework" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/Blogs/img/Robotics/20250516/2025-05-16-06.png" alt="Framework" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Framework of this paper</p>
 </div>
 <!-- FM:Snippet:End -->
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/20250516/2025-05-16-07.png" alt="Method" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/Blogs/img/Robotics/20250516/2025-05-16-07.png" alt="Method" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Method of this paper</p>
 </div>
 <!-- FM:Snippet:End -->
@@ -85,11 +85,11 @@ katex: true
   <!-- 第一行图片 -->
   <div class="image-row">
     <div class="image-container">
-      <img src="../../../../../img/Robotics/20250516/2025-05-16-03.png" alt="pic1">
+      <img src="/Blogs/img/Robotics/20250516/2025-05-16-03.png" alt="pic1">
       <p class="image-caption">Policy Action Comparison</p>
     </div>
     <div class="image-container">
-      <img src="../../../../../img/Robotics/20250516/2025-05-16-04.png" alt="pic2">
+      <img src="/Blogs/img/Robotics/20250516/2025-05-16-04.png" alt="pic2">
       <p class="image-caption">Policy Troque Comparison</p>
     </div>
   </div>
@@ -97,7 +97,7 @@ katex: true
   <!-- 第二行图片 -->
   <div class="image-row">
     <div class="image-container">
-      <img src="../../../../../img/Robotics/20250516/2025-05-16-05.png" alt="pic3">
+      <img src="/Blogs/img/Robotics/20250516/2025-05-16-05.png" alt="pic3">
       <p class="image-caption">Base Forward Linear Velocity Comparison</p>
     </div>
   </div>

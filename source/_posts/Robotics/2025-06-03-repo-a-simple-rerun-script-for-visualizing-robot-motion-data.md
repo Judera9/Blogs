@@ -25,7 +25,7 @@ cover: ./img/Robotics/20250603/2025-06-03-01.jpg
 
 <!-- FM:Snippet:Start data:{"id":"img","fields":[]} -->
 <div style="text-align: center;">
-  <img src="../../../../../img/Robotics/20250603/2025-06-03-01.jpg" alt="demo for unitree g1 robot" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/Blogs/img/Robotics/20250603/2025-06-03-01.jpg" alt="demo for unitree g1 robot" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="color: #666; font-style: italic; margin-top: 8px;">Demo for Unitree G1 Robot</p>
 </div>
 <!-- FM:Snippet:End -->
